@@ -7,14 +7,14 @@ on:
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
       - name: Set Up Godot
-        uses: actions/godot-action@v1
+        uses: actions/godot-action@v2
         with:
           godot-version: 4.1.3
 
