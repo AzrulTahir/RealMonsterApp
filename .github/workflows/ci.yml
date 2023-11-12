@@ -19,4 +19,4 @@ jobs:
           version: '4.1.3'
 
       - name: Run CI Script
-        run: godot -s "scripts/ci.gd"
+        run: godot -s "res://scripts/ci.gd"
