@@ -1,0 +1,22 @@
+name: Real Monster App CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Godot
+        uses: actions/setup-godot@v1
+        with:
+          godot-version: 3.4
+
+      - name: Run CI Script
+        run: godot -s ci.gd
