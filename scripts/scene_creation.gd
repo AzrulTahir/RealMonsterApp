@@ -1,7 +1,7 @@
 # scene_creation.gd
 
 func create_scenes():
-    for i in range(1, 6):  # Create scenes for Scene1 to Scene5
+    for i in range(1, 4):  # Create scenes for Scene1 to Scene5
         var scene = preload("res://scenes/SceneTemplate.tscn").instance()
         var video_player = scene.get_node("VideoPlayer")
         video_player.stream = preload("res://scenes/Scene" + str(i) + ".mp4")

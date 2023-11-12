@@ -4,7 +4,7 @@ func export_to_android():
     # Export the project for Android
     var export_path = "export/android/"
     var project_path = "."
-    var android_template = "res://path/to/android_export_presets.cfg"
+    var android_template = "res://android_export_presets.cfg"
 
     var export_flags = ["-path", export_path, "-export-debug"]
 

@@ -6,4 +6,5 @@ func import_assets():
     preload("res://scenes/Scene1.mp4")
     preload("res://scenes/Scene2.mp4")
     preload("res://scenes/Scene3.mp4")
+    preload("res://scenes/Scene4.mp4")
     # Add more preloads for additional scenes as needed
