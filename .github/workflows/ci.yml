@@ -1,4 +1,4 @@
-name: Real Monster App CI
+name: CI Automation
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set Up Godot
-        uses: actions/setup-godot@v1
+        uses: Setheck/godot-action@v1
         with:
-          godot-version: 3.4
+          version: '3.4.0'
 
       - name: Run CI Script
-        run: godot -s ci.gd
+        run: godot -s "scripts/ci.gd"
